@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Micha Verbeek</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+    }
+    header {
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* altijd 2 kolommen */
+      grid-template-rows: repeat(2, 1fr);    /* altijd 2 rijen */
+      gap: 20px;
+      padding: 20px;
+      height: calc(100vh - 60px); /* vul bijna het volledige scherm */
+      box-sizing: border-box;
+    }
+    .grid a {
+      text-decoration: none;
+      color: black;
+    }
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* snijdt netjes bij */
+      display: block;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    michaverbeek.
+  </header>
+
+  <main>
+      <a href="film1.html" class="thumbnail">
+        <img src="film1-thumbnail.jpg" alt="Film 1">
+      </a>
+      <a href="film2.html" class="thumbnail">
+        <img src="film2-thumbnail.jpg" alt="Film 2">
+      </a>
+      <a href="film3.html" class="thumbnail">
+        <img src="film3-thumbnail.jpg" alt="Film 3">
+      </a>
+      <a href="film4.html" class="thumbnail">
+        <img src="film4-thumbnail.jpg" alt="Film 4">
+      </a>
+  </main>
+</body>
+</html>
