@@ -1,39 +1,38 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Micha Verbeek</title>
+  <title>Micha Verbeek | Films</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: white;
       color: black;
+      padding: 20px;
     }
     header {
-      padding: 20px;
       font-size: 20px;
       font-weight: bold;
+      margin-bottom: 40px;
     }
-    main {
+    .gallery {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* altijd 2 kolommen */
-      grid-template-rows: repeat(2, 1fr);    /* altijd 2 rijen */
+      grid-template-columns: repeat(2, 1fr); /* altijd 2 naast elkaar */
       gap: 20px;
-      padding: 20px;
-      height: calc(100vh - 60px); /* vul bijna het volledige scherm */
-      box-sizing: border-box;
+      max-width: 800px;
+      margin: 0 auto;
     }
-    .grid a {
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover; /* alle thumbnails even groot */
+      cursor: pointer;
+    }
+    a {
       text-decoration: none;
       color: black;
-    }
-    .thumbnail img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* snijdt netjes bij */
-      display: block;
-      border-radius: 4px;
     }
   </style>
 </head>
@@ -43,18 +42,13 @@
   </header>
 
   <main>
-      <a href="film1.html" class="thumbnail">
-        <img src="film1-thumbnail.jpg" alt="Film 1">
-      </a>
-      <a href="film2.html" class="thumbnail">
-        <img src="film2-thumbnail.jpg" alt="Film 2">
-      </a>
-      <a href="film3.html" class="thumbnail">
-        <img src="film3-thumbnail.jpg" alt="Film 3">
-      </a>
-      <a href="film4.html" class="thumbnail">
-        <img src="film4-thumbnail.jpg" alt="Film 4">
-      </a>
+    <div class="gallery">
+      <a href="film1.html"><img src="film1-thumbnail.jpg" alt="De Realist (2024)"></a>
+      <a href="film2.html"><img src="film2-thumbnail.jpg" alt="Klapstoel (2025)"></a>
+      <a href="film3.html"><img src="film3-thumbnail.jpg" alt="Slecht Nieuws Live (2025)"></a>
+      <a href="film4.html"><img src="film4-thumbnail.jpg" alt="Maskerade (2023)"></a>
+      <a href="film5.html"><img src="film5-thumbnail.jpg" alt="Nieuwe Film (2025)"></a>
+    </div>
   </main>
 </body>
 </html>
