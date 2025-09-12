@@ -1,3 +1,4 @@
+<!-- film4.html -->
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -11,18 +12,15 @@
       color: black;
       padding: 20px;
     }
-
     header {
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 40px;
     }
-
     h1 {
       font-size: 28px;
       margin-bottom: 10px;
     }
-
     .description {
       max-width: 800px;
       font-size: 16px;
@@ -30,50 +28,41 @@
       color: #555;
       margin-bottom: 20px;
     }
-
     .content-wrapper {
       display: flex;
-      flex-wrap: wrap; /* zorgt dat het op smalle schermen onder elkaar gaat */
+      justify-content: flex-start;
       gap: 20px;
       align-items: flex-start;
+      flex-wrap: wrap;
       max-width: 1000px;
+      margin-bottom: 20px;
     }
-
     .video {
-      flex: 2 1 600px; /* neemt de meeste ruimte in */
+      flex: 2 1 600px;
     }
-
     iframe {
       width: 100%;
       height: 450px;
       border: none;
       display: block;
     }
-
     .credits {
       flex: 1 1 200px;
       font-size: 16px;
       line-height: 1.4;
       color: #555;
-      background-color: #f9f9f9; /* lichte achtergrond zodat het duidelijk zichtbaar is */
-      padding: 10px;
-      border-radius: 8px;
+      margin-top: 0;
     }
-
     .credits p {
-      margin: 5px 0;
+      margin: 2px 0;
+      font-weight: normal;
     }
-
+    .credits p.first {
+      margin-bottom: 8px;
+    }
     a {
       color: black;
       text-decoration: none;
-    }
-
-    /* Responsief: credits onder video op smalle schermen */
-    @media (max-width: 700px) {
-      .content-wrapper {
-        flex-direction: column;
-      }
     }
   </style>
 </head>
@@ -83,22 +72,20 @@
   </header>
 
   <main>
-    <h1>Koning van de dansvloer (2025)</h1>
+    <h1>Koning van de dansvloer (2025))</h1>
     <div class="description">
       <p>Een muziekvideo voor de popband 'FOEK!'</p>
     </div>
 
     <div class="content-wrapper">
       <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DSPTawgqrJE?si=u840bbAAubtd9f8V" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DSPTawgqrJE?si=u840bbAAubtd9f8V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div class="credits">
-        <p>Director | Micha Verbeek</p>
-        <p>Camera operator | Micha Verbeek</p>
-        <p>Editing | Micha Verbeek</p>
-        <p>Colorist | Micha Verbeek</p>
+        <p>Director l Micha Verbeek</p>
+        <p>Camera operator l Micha Verbeek</p>
+        <p>Editing l Micha Verbeek</p>
+        <p>Colorist l Micha Verbeek</p>
       </div>
     </div>
   </main>
