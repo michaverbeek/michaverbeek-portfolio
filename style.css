@@ -53,22 +53,28 @@ header {
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
+/* NIEUWE STIJL VOOR OVERLAY */
 .film .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255,255,255,0.85);
-  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparant donker */
+  color: #fff;                     /* witte tekst */
+  padding: 15px 10px;
   text-align: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(20px);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .film:hover .overlay {
   opacity: 1;
+  transform: translateY(0); /* zacht omhoog komen */
 }
 
 footer {
