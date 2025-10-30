@@ -1,0 +1,27 @@
+[
+  {
+    "title": "De Realist (2024)",
+    "thumbnail": "film1-thumbnail.jpg",
+    "link": "derealist.html"
+  },
+  {
+    "title": "Klapstoel (2025)",
+    "thumbnail": "film2-thumbnail.jpg",
+    "link": "klapstoel.html"
+  },
+  {
+    "title": "Slecht Nieuws Live (2025)",
+    "thumbnail": "film3-thumbnail.jpg",
+    "link": "slechtnieuws.html"
+  },
+  {
+    "title": "Maskerade (2023)",
+    "thumbnail": "film4-thumbnail.jpg",
+    "link": "maskerade.html"
+  },
+  {
+    "title": "Koning van de Dansvloer (2025)",
+    "thumbnail": "film5-thumbnail.jpg",
+    "link": "koningvandedansvloer.html"
+  }
+]
