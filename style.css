@@ -27,54 +27,28 @@ header {
   padding: 0 20px;
 }
 
-.film {
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transform: scale(1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  animation: fadeIn 1.2s ease forwards;
-  opacity: 0;
-}
-
-.film:nth-child(odd) { animation-delay: 0.2s; }
-.film:nth-child(even) { animation-delay: 0.4s; }
-
-.film img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.film:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
-/* NIEUWE STIJL VOOR OVERLAY */
 .film .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5); /* semi-transparant donker */
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); /* zachte fade omhoog */
   color: #fff;                     /* witte tekst */
   padding: 15px 10px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   opacity: 0;
   transition: opacity 0.4s ease, transform 0.4s ease;
   transform: translateY(20px);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5); /* subtiele glans voor betere leesbaarheid */
 }
 
 .film:hover .overlay {
   opacity: 1;
-  transform: translateY(0); /* zacht omhoog komen */
+  transform: translateY(0); /* zacht omhoog glijden */
 }
 
 footer {
