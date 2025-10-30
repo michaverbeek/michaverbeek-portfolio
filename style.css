@@ -12,12 +12,11 @@ header {
 }
 
 .logo {
-  font-family: Arial, sans-serif; /* verander van Playfair Display naar Arial */
-  font-weight: 600;               /* houdt het vetgedrukt */
-  font-size: 22px;                /* zelfde grootte als andere pagina's */
-  letter-spacing: -0.3px;         /* zelfde letter-spacing als header elders */
+  font-family: Arial, sans-serif; /* Arial logo */
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.3px;
 }
-
 
 .gallery {
   display: grid;
@@ -28,13 +27,39 @@ header {
   padding: 0 20px;
 }
 
+.film {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transform: scale(1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeIn 1.2s ease forwards;
+  opacity: 0;
+}
+
+.film:nth-child(odd) { animation-delay: 0.2s; }
+.film:nth-child(even) { animation-delay: 0.4s; }
+
+.film img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.film:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
 .film .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); /* zachte fade omhoog */
-  color: #fff;                     /* witte tekst */
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  color: #fff;
   padding: 15px 10px;
   text-align: center;
   font-weight: 600;
@@ -44,12 +69,12 @@ header {
   transform: translateY(20px);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.5); /* subtiele glans voor betere leesbaarheid */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
 .film:hover .overlay {
   opacity: 1;
-  transform: translateY(0); /* zacht omhoog glijden */
+  transform: translateY(0);
 }
 
 footer {
