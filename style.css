@@ -12,11 +12,12 @@ header {
 }
 
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  font-size: 26px;
-  letter-spacing: -0.5px;
+  font-family: Arial, sans-serif; /* verander van Playfair Display naar Arial */
+  font-weight: 600;               /* houdt het vetgedrukt */
+  font-size: 22px;                /* zelfde grootte als andere pagina's */
+  letter-spacing: -0.3px;         /* zelfde letter-spacing als header elders */
 }
+
 
 .gallery {
   display: grid;
