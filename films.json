@@ -5,19 +5,24 @@
     "link": "derealist.html"
   },
   {
+    "title": "Pluk Dan (2025)",
+    "thumbnail": "plukdan.jpg",
+    "link": "plukdan.html"
+  }
+  {
     "title": "Klapstoel (2025)",
     "thumbnail": "film2-thumbnail.jpg",
     "link": "klapstoel.html"
   },
   {
-    "title": "Slecht Nieuws Live (2025)",
-    "thumbnail": "film3-thumbnail.jpg",
-    "link": "slechtnieuws.html"
-  },
-  {
     "title": "Maskerade (2023)",
     "thumbnail": "film4-thumbnail.jpg",
     "link": "maskerade.html"
+  },
+  {
+    "title": "Slecht Nieuws Live (2025)",
+    "thumbnail": "film3-thumbnail.jpg",
+    "link": "slechtnieuws.html"
   },
   {
     "title": "Koning van de Dansvloer (2025)",
