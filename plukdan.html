@@ -50,7 +50,7 @@
     .video-container {
       position: relative;
       width: 100%;
-      padding-top: 56.25%; /* 16:9 */
+      padding-top: 56.25%; /* 16:9 ratio */
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
@@ -106,11 +106,19 @@
   </header>
 
   <main>
-    <h1>Pluk Dan </h1>
+    <h1>Pluk Dan</h1>
     <p class="description">Een live-video voor de Nederlandstalige poëtische popband 'Pluk Dan'</p>
 
-    <div class="video-container""
-     "<iframe width="560" height="315" src="https://www.youtube.com/embed/RlptM1f1y3M?si=vQr3lLqARL2JT5D_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/RlptM1f1y3M?si=vQr3lLqARL2JT5D_" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+      </iframe>
+    </div>
+
     <div class="credits">
       <p><span class="label">Camera operator</span> Micha Verbeek</p>
       <p><span class="label">Editing</span> Micha Verbeek</p>
