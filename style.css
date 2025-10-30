@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background: #fffdf9;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: left;
+  padding: 30px 50px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: -0.5px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.film {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transform: scale(1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeIn 1.2s ease forwards;
+  opacity: 0;
+}
+
+.film:nth-child(odd) { animation-delay: 0.2s; }
+.film:nth-child(even) { animation-delay: 0.4s; }
+
+.film img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.film:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.film .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.85);
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.film:hover .overlay {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
