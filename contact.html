@@ -3,37 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact & Info</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Contact | Micha Verbeek</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    body {
+      margin: 0;
+      background: #fffdf9;
+      color: #111;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 40px 60px;
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #111;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 20px 100px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    p.intro {
+      color: #777;
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      padding: 12px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: white;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #000;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    button {
+      background: #111;
+      color: white;
+      font-size: 16px;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: fit-content;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin-top: 60px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Contact & Info</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
+    <a href="index.html">michaverbeek.</a>
   </header>
 
-  <main class="contact">
-    <section class="info">
-    </section>
+  <main>
+    <h1>Contact</h1>
+    <p class="intro">Heb je een vraag of wil je samenwerken? Stuur me een bericht hieronder of mail me direct.</p>
 
-    <section class="links">
-      <h3>Contact</h3>
-      <ul>
-        <li>
-          📸 <a href="https://www.instagram.com/michaverbeek__" target="_blank" rel="noopener">Instagram</a>
-        </li>
-        <li>
-          ✉️ <a href="mailto:michaverbeekcontact@gmail.com">michaverbeekcontact@gmail.com</a>
-        </li>
-      </ul>
-    </section>
+    <form action="mailto:jouwe-mailadres@voorbeeld.com" method="post" enctype="text/plain">
+      <input type="text" name="naam" placeholder="Je naam" required>
+      <input type="email" name="email" placeholder="Je e-mailadres" required>
+      <textarea name="bericht" placeholder="Je bericht..." required></textarea>
+      <button type="submit">Verstuur</button>
+    </form>
+
+    <footer>
+      <p>© 2025 Micha Verbeek</p>
+    </footer>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Micha Verbeek — Alle rechten voorbehouden.</p>
-  </footer>
 </body>
 </html>
