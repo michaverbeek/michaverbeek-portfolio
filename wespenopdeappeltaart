@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Wespen Op De Appeltaart | Micha Verbeek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: #fffdf9;
+      color: #111;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 40px 60px;
+      font-family: Arial, sans-serif;
+      font-size: 22px;
+      letter-spacing: -0.3px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #111;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    h1 {
+      font-family: Arial, sans-serif;
+      font-size: 38px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .description {
+      color: #777;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .credits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 40px;
+      max-width: 800px;
+      color: #555;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    .credits p {
+      margin: 3px 0;
+    }
+
+    .credits span.label {
+      color: #222;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin-top: 60px;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">michaverbeek.</a>
+  </header>
+
+  <main>
+    <h1>Wespen Op De Appeltaart</h1>
+    <p class="description">Een korte semi-fictie film over mijn perspectief op mijn dementerde opa. </p>
+
+    <div class="video-container">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/uoy2VEmfFNs?si=fZsXZIca-0AtiL8b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="credits">
+      <p><span class="label">Camera</span> Micha Verbeek</p>
+      <p><span class="label">Montage</span> Micha Verbeek</p>
+      <p><span class="label">Muziek</span> Wespen Op De Appeltaart, Spinvis</p>
+     
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Micha Verbeek
+  </footer>
+</body>
+</html>
