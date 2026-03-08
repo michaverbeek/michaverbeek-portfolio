@@ -47,7 +47,7 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* VIDEO + AWARDS LAYOUT */
+/* VIDEO + AWARDS */
 
 .media-section {
   display: flex;
@@ -74,26 +74,29 @@ h1 {
   border:none;
 }
 
-/* AWARDS */
+/* AWARDS STYLING */
 
 .awards {
   flex: 1;
+  font-size: 16px;
+  color: #555;
 }
 
 .awards h2 {
   font-size: 22px;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
-.awards ul {
-  padding-left: 18px;
-  color: #555;
-  font-size: 16px;
+.awards p {
+  margin: 6px 0;
 }
 
-.awards li {
-  margin-bottom: 8px;
+.awards span.label {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  margin-right: 8px;
 }
 
 /* CREDITS */
@@ -134,10 +137,6 @@ footer {
     flex-direction: column;
   }
 
-  .video-container {
-    width: 100%;
-  }
-
 }
 
 @keyframes fadeIn {
@@ -170,11 +169,11 @@ Een persoonlijke korte film over derealisatie: een gevoel waarbij je de werkelij
 
 <div class="awards">
 <h2>Awards</h2>
-<ul>
-<li>Nominatie – Rialto For Short seizoen 7, 3e editie</li>
-<li>Tweede prijs – Kunstbende Young Creators Festival</li>
-<li>Eerste prijs – Kunstbende Overijssel</li>
-</ul>
+
+<p><span class="label">Nominatie</span> Rialto For Short seizoen 7, 3e editie</p>
+<p><span class="label">2e prijs</span> Kunstbende Young Creators Festival</p>
+<p><span class="label">1e prijs</span> Kunstbende Overijssel</p>
+
 </div>
 
 </div>
