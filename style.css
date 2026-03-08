@@ -36,6 +36,9 @@ header {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   animation: fadeIn 1.2s ease forwards;
   opacity: 0;
+
+  /* FIX: uniforme hoogte voor alle thumbnails */
+  height: 400px; /* vaste hoogte voor alle thumbnails */
 }
 
 .film:nth-child(odd) { animation-delay: 0.2s; }
@@ -43,8 +46,8 @@ header {
 
 .film img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 100%; /* vult de vaste hoogte van .film */
+  object-fit: cover; /* bijsnijden indien nodig */
   display: block;
 }
 
@@ -87,4 +90,11 @@ footer {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 500px) {
+  .film {
+    height: 300px; /* kleinere hoogte op mobiel */
+  }
 }
