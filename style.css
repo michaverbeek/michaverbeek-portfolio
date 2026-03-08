@@ -12,7 +12,7 @@ header {
 }
 
 .logo {
-  font-family: Arial, sans-serif; /* Arial logo */
+  font-family: Arial, sans-serif;
   font-weight: normal;
   font-size: 22px;
   letter-spacing: -0.3px;
@@ -37,17 +37,20 @@ header {
   animation: fadeIn 1.2s ease forwards;
   opacity: 0;
 
-  /* FIX: uniforme hoogte voor alle thumbnails */
-  height: 400px; /* vaste hoogte voor alle thumbnails */
+  /* FIX: horizontale thumbnails 16:9 ratio */
+  padding-top: 56.25%; /* 16:9 verhouding */
 }
 
 .film:nth-child(odd) { animation-delay: 0.2s; }
 .film:nth-child(even) { animation-delay: 0.4s; }
 
 .film img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%; /* vult de vaste hoogte van .film */
-  object-fit: cover; /* bijsnijden indien nodig */
+  height: 100%;
+  object-fit: cover; /* netjes bijgesneden */
   display: block;
 }
 
@@ -95,6 +98,6 @@ footer {
 /* RESPONSIVE FIX */
 @media (max-width: 500px) {
   .film {
-    height: 300px; /* kleinere hoogte op mobiel */
+    padding-top: 60%; /* horizontaal maar kleiner op mobiel */
   }
 }
