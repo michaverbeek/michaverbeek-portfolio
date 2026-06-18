@@ -1,10 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
 <title>De Realist (2024) | Micha Verbeek</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
 body {
   margin: 0;
@@ -17,7 +17,6 @@ body {
 
 header {
   padding: 40px 60px;
-  font-family: Arial, sans-serif;
   font-size: 22px;
   letter-spacing: -0.3px;
 }
@@ -35,7 +34,6 @@ main {
 }
 
 h1 {
-  font-family: Arial, sans-serif;
   font-size: 38px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -48,11 +46,17 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* Video container horizontaal (16:9) */
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 40px 0 15px;
+  letter-spacing: -0.3px;
+}
+
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 ratio */
+  padding-top: 56.25%;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
@@ -61,14 +65,13 @@ h1 {
 
 .video-container iframe {
   position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  border:none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
-/* Credits */
 .credits {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -76,7 +79,6 @@ h1 {
   max-width: 800px;
   color: #555;
   font-size: 16px;
-  font-family: Arial, sans-serif;
   margin-bottom: 40px;
 }
 
@@ -90,55 +92,92 @@ h1 {
   letter-spacing: -0.2px;
 }
 
-/* Footer */
 footer {
   text-align: center;
   font-size: 14px;
   color: #999;
   margin-top: 60px;
-  font-family: Arial, sans-serif;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px);}
-  to { opacity:1; transform: translateY(0);}
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .credits {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
 }
 </style>
 </head>
-
 <body>
+
 <header>
   <a href="index.html">michaverbeek.</a>
 </header>
 
 <main>
-<h1>De Realist (2024)</h1>
-<p class="description">Een persoonlijke korte film over derealisatie: een gevoel waarbij je de werkelijkheid als een droom of niet-echt ervaart.</p>
 
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/WRrgmPxZPZY?si=oHSAfyV5kLGElEfs"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-  </iframe>
-</div>
+  <h1>De Realist (2024)</h1>
 
-<div class="credits">
-<p><span class="label">Starring</span> Micha Verbeek</p>
-<p><span class="label">Director</span> Micha Verbeek</p>
-<p><span class="label">Screen writer</span> Jonas Roele, Micha Verbeek</p>
-<p><span class="label">Poem</span> Domien Verbeek</p>
-<p><span class="label">D.O.P</span> Jonas Roele, Micha Verbeek</p>
-<p><span class="label">Costume design</span> Jonas Roele</p>
-<p><span class="label">Editing</span> Micha Verbeek</p>
-<p><span class="label">Composer</span> Domien Verbeek</p>
-</div>
+  <p class="description">
+    Een persoonlijke korte film over derealisatie: een gevoel waarbij je de werkelijkheid als een droom of niet-echt ervaart.
+  </p>
+
+  <h2>Film</h2>
+
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/WRrgmPxZPZY?si=oHSAfyV5kLGElEfs"
+      title="De Realist"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <h2>Interview</h2>
+
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/Sx7YDazqKog?si=WWDFB7tBpUjDiY9E"
+      title="Interview De Realist"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="credits">
+    <p><span class="label">Starring</span> Micha Verbeek</p>
+    <p><span class="label">Director</span> Micha Verbeek</p>
+    <p><span class="label">Screen writer</span> Jonas Roele, Micha Verbeek</p>
+    <p><span class="label">Poem</span> Domien Verbeek</p>
+    <p><span class="label">D.O.P</span> Jonas Roele, Micha Verbeek</p>
+    <p><span class="label">Costume design</span> Jonas Roele</p>
+    <p><span class="label">Editing</span> Micha Verbeek</p>
+    <p><span class="label">Composer</span> Domien Verbeek</p>
+  </div>
+
 </main>
 
 <footer>
-© 2025 Micha Verbeek
+  © 2025 Micha Verbeek
 </footer>
 
 </body>
 </html>
+```
