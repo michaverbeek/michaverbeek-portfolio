@@ -13,7 +13,6 @@ body {
   color: #111;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 header {
@@ -22,7 +21,7 @@ header {
   letter-spacing: -0.3px;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #111;
 }
@@ -30,39 +29,47 @@ a {
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px 80px;
-  animation: fadeIn 1s ease forwards;
+  padding: 0 20px 100px;
+  animation: fadeIn .8s ease forwards;
 }
 
 h1 {
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 16px;
   letter-spacing: -1px;
+  margin-bottom: 12px;
 }
 
 .description {
   color: #666;
   font-size: 18px;
-  max-width: 800px;
-  margin-bottom: 40px;
+  max-width: 760px;
+  margin-bottom: 60px;
 }
 
 .section-title {
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  margin: 70px 0 20px;
+  max-width: 900px;
+  margin: 0 auto 18px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: #888;
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
-  border-radius: 18px;
+  max-width: 900px;
+  margin: 0 auto 80px;
+  padding-top: 50.625%;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
 .video-container iframe {
@@ -73,21 +80,29 @@ h1 {
   border: none;
 }
 
+.credits-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.credits-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: 25px;
+}
+
 .credits {
-  margin: 50px 0;
-  max-width: 800px;
   display: grid;
   grid-template-columns: 180px 1fr;
-  gap: 14px 30px;
+  gap: 12px 40px;
+  color: #555;
 }
 
 .credit-label {
   font-weight: 600;
   color: #111;
-}
-
-.credit-value {
-  color: #666;
 }
 
 footer {
@@ -100,7 +115,7 @@ footer {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
@@ -118,13 +133,13 @@ footer {
     font-size: 34px;
   }
 
-  .section-title {
-    font-size: 24px;
+  .description {
+    font-size: 16px;
   }
 
   .credits {
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: 6px;
   }
 
   .credit-label {
@@ -148,34 +163,6 @@ footer {
     Een persoonlijke korte film over derealisatie: een gevoel waarbij je de werkelijkheid als een droom of niet-echt ervaart.
   </p>
 
-  <div class="credits">
-
-    <div class="credit-label">Starring</div>
-    <div class="credit-value">Micha Verbeek</div>
-
-    <div class="credit-label">Director</div>
-    <div class="credit-value">Micha Verbeek</div>
-
-    <div class="credit-label">Screenwriter</div>
-    <div class="credit-value">Jonas Roele, Micha Verbeek</div>
-
-    <div class="credit-label">Poem</div>
-    <div class="credit-value">Domien Verbeek</div>
-
-    <div class="credit-label">D.O.P.</div>
-    <div class="credit-value">Jonas Roele, Micha Verbeek</div>
-
-    <div class="credit-label">Costume Design</div>
-    <div class="credit-value">Jonas Roele</div>
-
-    <div class="credit-label">Editing</div>
-    <div class="credit-value">Micha Verbeek</div>
-
-    <div class="credit-label">Composer</div>
-    <div class="credit-value">Domien Verbeek</div>
-
-  </div>
-
   <div class="section-title">Film</div>
 
   <div class="video-container">
@@ -189,9 +176,7 @@ footer {
 
   <div class="section-title">
     Interview
-    <span style="font-size:25px;font-weight:400;color:#888;text-transform:none;">
-      (vanaf 5:23)
-    </span>
+    <span class="subtitle">— vanaf 5:23</span>
   </div>
 
   <div class="video-container">
@@ -201,6 +186,40 @@ footer {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen>
     </iframe>
+  </div>
+
+  <div class="credits-section">
+
+    <div class="credits-title">Credits</div>
+
+    <div class="credits">
+
+      <div class="credit-label">Starring</div>
+      <div>Micha Verbeek</div>
+
+      <div class="credit-label">Director</div>
+      <div>Micha Verbeek</div>
+
+      <div class="credit-label">Screenwriter</div>
+      <div>Jonas Roele, Micha Verbeek</div>
+
+      <div class="credit-label">Poem</div>
+      <div>Domien Verbeek</div>
+
+      <div class="credit-label">D.O.P.</div>
+      <div>Jonas Roele, Micha Verbeek</div>
+
+      <div class="credit-label">Costume Design</div>
+      <div>Jonas Roele</div>
+
+      <div class="credit-label">Editing</div>
+      <div>Micha Verbeek</div>
+
+      <div class="credit-label">Composer</div>
+      <div>Domien Verbeek</div>
+
+    </div>
+
   </div>
 
 </main>
