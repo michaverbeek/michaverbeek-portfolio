@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <title>De Realist (2024) | Micha Verbeek</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body {
   margin: 0;
@@ -34,70 +35,66 @@ main {
 }
 
 h1 {
-  font-size: 38px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  letter-spacing: -0.5px;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
 }
 
 .description {
-  color: #777;
+  color: #666;
   font-size: 18px;
+  max-width: 800px;
   margin-bottom: 40px;
 }
 
-h2 {
+.section-title {
   font-size: 32px;
   font-weight: 800;
   letter-spacing: -1px;
-  margin: 60px 0 20px;
   text-transform: uppercase;
+  margin: 70px 0 20px;
 }
 
 .video-container {
   position: relative;
   width: 100%;
   padding-top: 56.25%;
-  border-radius: 16px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  margin-bottom: 40px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
 .video-container iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   border: none;
 }
 
 .credits {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 40px;
+  margin: 50px 0;
   max-width: 800px;
-  color: #555;
-  font-size: 16px;
-  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 14px 30px;
 }
 
-.credits p {
-  margin: 3px 0;
+.credit-label {
+  font-weight: 600;
+  color: #111;
 }
 
-.credits span.label {
-  color: #222;
-  font-weight: 500;
-  letter-spacing: -0.2px;
+.credit-value {
+  color: #666;
 }
 
 footer {
   text-align: center;
   font-size: 14px;
   color: #999;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 @keyframes fadeIn {
@@ -112,24 +109,31 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .credits {
-    grid-template-columns: 1fr;
-  }
 
   header {
     padding: 30px 20px;
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
-  h2 {
-    font-size: 26px;
+  .section-title {
+    font-size: 24px;
+  }
+
+  .credits {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .credit-label {
+    margin-top: 10px;
   }
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -144,7 +148,35 @@ footer {
     Een persoonlijke korte film over derealisatie: een gevoel waarbij je de werkelijkheid als een droom of niet-echt ervaart.
   </p>
 
-  <h2>Film</h2>
+  <div class="credits">
+
+    <div class="credit-label">Starring</div>
+    <div class="credit-value">Micha Verbeek</div>
+
+    <div class="credit-label">Director</div>
+    <div class="credit-value">Micha Verbeek</div>
+
+    <div class="credit-label">Screenwriter</div>
+    <div class="credit-value">Jonas Roele, Micha Verbeek</div>
+
+    <div class="credit-label">Poem</div>
+    <div class="credit-value">Domien Verbeek</div>
+
+    <div class="credit-label">D.O.P.</div>
+    <div class="credit-value">Jonas Roele, Micha Verbeek</div>
+
+    <div class="credit-label">Costume Design</div>
+    <div class="credit-value">Jonas Roele</div>
+
+    <div class="credit-label">Editing</div>
+    <div class="credit-value">Micha Verbeek</div>
+
+    <div class="credit-label">Composer</div>
+    <div class="credit-value">Domien Verbeek</div>
+
+  </div>
+
+  <div class="section-title">Film</div>
 
   <div class="video-container">
     <iframe
@@ -155,26 +187,20 @@ footer {
     </iframe>
   </div>
 
-  <h2>Interview <span style="font-size:18px;font-weight:400;color:#888;text-transform:none;">— vanaf 5:23</span></h2>
+  <div class="section-title">
+    Interview
+    <span style="font-size:25px;font-weight:400;color:#888;text-transform:none;">
+      (vanaf 5:23)
+    </span>
+  </div>
 
   <div class="video-container">
     <iframe
-      src="https://www.youtube.com/embed/Sx7YDazqKog?si=WWDFB7tBpUjDiY9E"
+      src="https://www.youtube.com/embed/Sx7YDazqKog?start=323"
       title="Interview De Realist"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen>
     </iframe>
-  </div>
-
-  <div class="credits">
-    <p><span class="label">Starring</span> Micha Verbeek</p>
-    <p><span class="label">Director</span> Micha Verbeek</p>
-    <p><span class="label">Screen writer</span> Jonas Roele, Micha Verbeek</p>
-    <p><span class="label">Poem</span> Domien Verbeek</p>
-    <p><span class="label">D.O.P</span> Jonas Roele, Micha Verbeek</p>
-    <p><span class="label">Costume design</span> Jonas Roele</p>
-    <p><span class="label">Editing</span> Micha Verbeek</p>
-    <p><span class="label">Composer</span> Domien Verbeek</p>
   </div>
 
 </main>
